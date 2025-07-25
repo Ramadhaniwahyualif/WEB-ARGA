@@ -1,0 +1,202 @@
+*, html, body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Helvetica, sans-serif;
+	scroll-behavior: smooth;
+}
+
+header {
+	background: #3498DB;
+	color: #eaeaea;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	padding: 10px 20px;
+}
+
+.logo {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.logo-img {
+	width: 35px;
+	height: 35px;
+}
+
+.logo-title {
+	font-family: 'Metal Mania', cursive;
+	color: #d4d4d4;
+	text-shadow: 1px 1px 3px #888;
+	font-size: 24px;
+	cursor: pointer;
+}
+
+nav ul {
+	display: flex;
+	gap: 10px;
+}
+
+nav li {
+	list-style-type: none;
+}
+
+nav a {
+	color: #eaeaea;
+	text-decoration: none;
+	padding: 8px;
+	transition: 0.3s ease;
+}
+
+nav a:hover {
+	color: #FF6A3D;
+	transform: rotate(2deg);
+}
+
+.btn-cta {
+	border: none;
+	font-size: 16px;
+	padding: 6px 12px;
+	background: #ffffff;
+	color: #5f3d3d;
+	border-radius: 8px;
+	cursor: pointer;
+	margin-left: 5px;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 40px 20px;
+}
+
+.intro {
+	text-align: center;
+}
+
+.title {
+	font-family: 'Metal Mania', cursive;
+	font-size: 28px;
+	font-weight: bold;
+	color: #222;
+}
+
+.description {
+	font-size: 20px;
+	font-weight: bolder;
+	margin-top: 10px;
+}
+
+.img-foto {
+	width: 100%;
+	max-width: 400px;
+	height: auto;
+	margin-top: 20px;
+}
+
+.parallax {
+	background-image: url('assets/foto/benoke.jpg');
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.tentang {
+	background: #3498DB;
+	color: #eaeaea;
+	padding: 50px;
+	justify-content: center;
+	text-align: center;
+	width: 100%;
+}
+
+.card {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 16px;
+	margin-top: 30px;
+}
+
+.card-item,
+.card-itemCerita {
+	background: #f7f7f7;
+	color: #222;
+	padding: 20px;
+	border-radius: 8px;
+	box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.2);
+	flex: 1 1 300px;
+	max-width: 100%;
+}
+
+.card-title {
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.card-description {
+	font-size: 14px;
+	margin-top: 8px;
+	text-align: left;
+}
+
+footer {
+	padding: 20px;
+	text-align: center;
+	background: #3498DB;
+	color: #eaeaea;
+	margin-top: 60px;
+}
+
+/* RESPONSIVE BREAKPOINTS */
+@media screen and (max-width: 768px) {
+	header {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	nav ul {
+		flex-direction: column;
+		width: 100%;
+		padding: 0;
+	}
+
+	nav li {
+		width: 100%;
+	}
+
+	nav a {
+		display: block;
+		width: 100%;
+	}
+
+	.btn-cta {
+		margin-top: 10px;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.logo-title {
+		font-size: 20px;
+	}
+
+	.title {
+		font-size: 20px;
+	}
+
+	.description {
+		font-size: 16px;
+	}
+
+	.card-description {
+		font-size: 13px;
+	}
+}
